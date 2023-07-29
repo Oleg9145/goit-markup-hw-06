@@ -380,7 +380,7 @@ body {
   background: #f4f4fd;
 }
 .strategy-li {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
 }
 /*------------------------section-photo----------------------*/
 .section-photo-div {
