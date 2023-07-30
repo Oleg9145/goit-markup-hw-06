@@ -1,4 +1,4 @@
-@media screen and (min-width: 328px) and (max-width: 768px) {
+@media screen and (min-width: 428px) and (max-width: 768px) {
   .section-photo {
     display: none;
   }
@@ -35,21 +35,79 @@
   }
   /* Ourteam */
   .our-team {
-    padding: 208px 82px 96px 82px;
+    padding-top: 96px;
   }
   .our-team-ul {
     flex-direction: column;
+
+    align-items: center;
   }
   .index-list {
     margin-bottom: 72px;
     width: 264px;
   }
   .title-two {
+    text-align: center;
+    padding-top: 96px;
+    margin-bottom: 72px;
     font-size: 36px;
     text-align: center;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 0.02em;
+  }
+  /* section-five */
+  .section-five {
+  }
+
+  .customers {
+    margin-top: 96px;
+    margin-bottom: 72px;
+  }
+  .company-ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
+  }
+
+  .company-li {
+    width: calc((100% - 16px * 2) / 2);
+  }
+  /*--Підвал-->*/
+  .footer-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form-p {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .media {
+    margin-top: 72px;
+    text-align: center;
+  }
+  .madia-div,
+  .footer-div {
+    margin: 0 auto;
+  }
+  .footer-div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .label-f {
+    margin-top: 72px;
+    text-align: center;
+  }
+  .footer {
+    padding-top: 97px;
+  }
+  .email-form {
+    width: 398px;
+    padding: 0 15px 0 15px;
   }
 }
 
@@ -115,6 +173,28 @@
     padding-top: 96px;
     margin-bottom: 72px;
   }
-  .our-team {
+  .customers {
+    margin-top: 96px;
+    margin-bottom: 72px;
+  }
+  .company-ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
+  }
+
+  .company-li {
+    width: calc((100% - 16px * 2) / 3);
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .footer-div {
+    margin-right: 24px;
+  }
+  .footer-label {
+    margin-top: 72px;
   }
 }
