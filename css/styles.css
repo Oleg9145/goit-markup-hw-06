@@ -159,7 +159,9 @@ body {
   transition-duration: 250ms;
   color: #404bbf;
 }
-
+.icon-mob-open {
+  display: none;
+}
 .list {
   margin: 0;
   padding: 0;
@@ -190,7 +192,17 @@ body {
   background-size: cover;
   margin: 0 auto;
 }
-
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-officedes2x.jpg);
+  }
+}
 .section-h {
   max-width: 496px;
   flex-direction: column;

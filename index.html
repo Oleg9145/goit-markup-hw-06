@@ -23,8 +23,8 @@
 
 <body>
   <!--Навігаційна панель-->
-  <!-- <header class="header">
-   
+  <header class="header">
+
     <div class="header-div container">
       <nav class="nav link">
         <a href="./index.html" class="weblogo link">Web<span class="lstudio">Studio</span> </a>
@@ -35,8 +35,9 @@
           <li class=""> <a href="" class="li-style .contakts-a link"> Contacts </a></li>
 
         </ul>
+
       </nav>
-      
+
 
       <address class="address">
         <ul class="address-ul list">
@@ -45,8 +46,58 @@
 
         </ul>
       </address>
+      <button class="icon-mob" data-menu-open type="button"><svg width="64" height="64">
+          <use href="./images/icons.svg#icon-menu"> </use>
+        </svg></button>
     </div>
-  </header> -->
+    <div class="mobmenu is-hidden" data-menu>
+      <button class="close-mob" data-menu-close type="button"><svg class="icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg> </button>
+      <ul class="mob-ul list">
+
+        <li class="mob-studio"> <a href="./index.html" class="li-styl-m link">Studio </a></li>
+        <li class="mob-studio"> <a href="./portfolio.html" class="li-styl-m link"> Portfolio </a></li>
+        <li class="mob-studio"> <a href="./portfolio.html" class="li-styl-m link"> Contacts </a></li>
+
+      </ul>
+      <div>
+        <ul class="address-mob list">
+          <li><a href="tel:+110001111111" class="link tel-mob">+11 (000) 111-11-11</a></li>
+          <li><a href="mailto:info@devstudio.com" class="link mail-mob">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mob-icon">
+          <li class="list icon-li"><a href="" class="link icon-social-team"><svg class="icon-team" width="16"
+                height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+
+
+              </svg></a></li>
+          <li class="list icon-li"><a href="" class="link icon-social-team"><svg class="icon-team" width="16"
+                height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+
+
+              </svg></a></li>
+          <li class="list icon-li"> <a href="" class="link icon-social-team"><svg class="icon-team" width="16"
+                height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+
+
+              </svg></a></li>
+          <li class="list icon-li"> <a href="" class="link icon-social-team"><svg class="icon-team" width="16"
+                height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+
+
+              </svg></a></li>
+        </ul>
+      </div>
+
+
+
+    </div>
+  </header>
 
 
   <!--Оснавнй контент-->
@@ -58,6 +109,7 @@
           for Your Business</h1>
 
         <button type="button" class="botton-one" data-modal-open> Order Service</button>
+
       </div>
     </section>
     <!--Основна інфорація-->
@@ -128,7 +180,8 @@
       <div class="our-team-div container">
         <h2 class="title-two">Our Team</h2>
         <ul class="our-team-ul list">
-          <li class="index-list"> <img src="./images/our_team/1.jpg" alt="Mark Guerrero" width="264">
+          <li class="index-list"> <img src="./images/our_team/1.jpg" alt="Mark Guerrero" width="264"
+              srcset="./images/our_team/1.jpg 1x, ./images/our_team/12x.jpg 2x">
             <div class="team-div">
               <h3 class="team-title">Mark Guerrero</h3>
               <p class="team-par">Product Designer</p>
@@ -162,7 +215,8 @@
           </li>
 
           <li class="index-list">
-            <img src="./images/our_team/2.jpg" alt="Tom Ford" width="264">
+            <img src="./images/our_team/2.jpg" alt="Tom Ford" width="264"
+              srcset="./images/our_team/2.jpg 1x, ./images/our_team/22x.jpg 2x">>
             <div class="team-div">
               <h3 class="team-title">Tom Ford</h3>
               <p class="team-par">Frontend Developer</p>
@@ -198,7 +252,8 @@
 
 
           <li class="index-list">
-            <img src="./images/our_team/3.jpg" alt="Camila Garcia" width="264">
+            <img src="./images/our_team/3.jpg" alt="Camila Garcia" width="264"
+              srcset="./images/our_team/3.jpg 1x, ./images/our_team/32x.jpg 2x">>
             <div class="team-div">
               <h3 class="team-title">Camila Garcia</h3>
               <p class="team-par">Marketing</p>
@@ -232,7 +287,8 @@
           </li>
 
           <li class="index-list">
-            <img src="./images/our_team/4.jpg" alt="Daniel Wilson" width="264">
+            <img src="./images/our_team/4.jpg" alt="Daniel Wilson" width="264"
+              srcset="./images/our_team/4.jpg 1x, ./images/our_team/42x.jpg 2x">>
             <div class="team-div">
               <h3 class="team-title">Daniel Wilson</h3>
               <p class="team-par">UI Designer</p>
@@ -457,6 +513,7 @@
 
 
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 
 </body>
 
