@@ -159,7 +159,8 @@ body {
   transition-duration: 250ms;
   color: #404bbf;
 }
-.icon-mob-open {
+.icon-mob,
+.mobmenu {
   display: none;
 }
 .list {

@@ -25,6 +25,10 @@
     }
   }
   /*mobmenu*/
+  .icon-mob,
+  .mobmenu {
+    display: contents;
+  }
   .mobmenu {
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -253,7 +257,8 @@
         url(../images/Dark-bgtab2x.jpg);
     }
   }
-  .icon-mob {
+  .icon-mob,
+  .mobmenu {
     display: none;
   }
   .address-ul {
