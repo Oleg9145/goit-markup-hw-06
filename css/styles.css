@@ -376,9 +376,6 @@ body {
 .strategy-title {
   margin-top: 8px;
 }
-.strategy-ul p {
-  width: 264px;
-}
 
 .icon-strategy {
   margin-bottom: 8px;
@@ -795,6 +792,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
+
 .input {
   width: 100%;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

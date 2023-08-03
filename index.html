@@ -41,12 +41,12 @@
 
       <address class="address">
         <ul class="address-ul list">
-          <li><a href="mailto:info@devstudio.com" class="link color">info@devstudio.com</a></li>
+          <li class="mailto"><a href="mailto:info@devstudio.com" class="link color">info@devstudio.com</a></li>
           <li><a href="tel:+110001111111" class="link color">+11 (000) 111-11-11</a></li>
 
         </ul>
       </address>
-      <button class="icon-mob" data-menu-open type="button"><svg width="64" height="64">
+      <button class="icon-mob" data-menu-open type="button"><svg width="32" height="22">
           <use href="./images/icons.svg#icon-menu"> </use>
         </svg></button>
     </div>
@@ -54,18 +54,22 @@
       <button class="close-mob" data-menu-close type="button"><svg class="icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg> </button>
-      <ul class="mob-ul list">
+      <nav>
+        <ul class="mob-ul list">
 
-        <li class="mob-studio"> <a href="./index.html" class="li-styl-m link">Studio </a></li>
-        <li class="mob-studio"> <a href="./portfolio.html" class="li-styl-m link"> Portfolio </a></li>
-        <li class="mob-studio"> <a href="./portfolio.html" class="li-styl-m link"> Contacts </a></li>
+          <li class="studio"> <a href="./index.html" class="li-styl-m link">Studio </a></li>
+          <li class="mob-studio"> <a href="./portfolio.html" class="li-styl-m link"> Portfolio </a></li>
+          <li class="mob-studio"> <a href="./portfolio.html" class="li-styl-m link"> Contacts </a></li>
 
-      </ul>
-      <div>
-        <ul class="address-mob list">
-          <li><a href="tel:+110001111111" class="link tel-mob">+11 (000) 111-11-11</a></li>
-          <li><a href="mailto:info@devstudio.com" class="link mail-mob">info@devstudio.com</a></li>
         </ul>
+      </nav>
+      <div>
+        <address class="address-m">
+          <ul class=" address-mob list">
+            <li><a href="tel:+110001111111" class="link tel-mob">+11 (000) 111-11-11</a></li>
+            <li><a href="mailto:info@devstudio.com" class="link mail-mob">info@devstudio.com</a></li>
+          </ul>
+        </address>
         <ul class="mob-icon">
           <li class="list icon-li"><a href="" class="link icon-social-team"><svg class="icon-team" width="16"
                 height="16">
@@ -166,11 +170,13 @@
       <div class="section-photo-div container">
         <h2 class="title-two">What are we doing</h2>
         <ul class="section-photo-ul list">
-          <li class="section-photo-li"><img src="./images/main/main1.jpg" alt="Monitor" width="360"></li>
+          <li class="section-photo-li"><img src="./images/main/main1.jpg" alt="Monitor" width="360"
+              srcset="./images/main/main1.jpg 1x, ./images/main/main12x.jpg 2x"></li>
 
           <li class="section-photo-li"><img src="./images/main/main.2.jpg" alt="Messenger on the phone screen"
-              width="360"></li>
-          <li class="section-photo-li"><img src="./images/main/main3.jpg" alt="Iphone x" width="360"></li>
+              width="360" srcset="./images/main/main.2.jpg 1x, ./images/main/main22x.jpg 2x"> </li>
+          <li class="section-photo-li"><img src="./images/main/main3.jpg" alt="Iphone x" width="360"
+              srcset="./images/main/main3.jpg 1x, ./images/main/main32x.jpg 2x"></li>
         </ul>
       </div>
     </section>
@@ -216,7 +222,7 @@
 
           <li class="index-list">
             <img src="./images/our_team/2.jpg" alt="Tom Ford" width="264"
-              srcset="./images/our_team/2.jpg 1x, ./images/our_team/22x.jpg 2x">>
+              srcset="./images/our_team/2.jpg 1x, ./images/our_team/22x.jpg 2x">
             <div class="team-div">
               <h3 class="team-title">Tom Ford</h3>
               <p class="team-par">Frontend Developer</p>
@@ -253,7 +259,7 @@
 
           <li class="index-list">
             <img src="./images/our_team/3.jpg" alt="Camila Garcia" width="264"
-              srcset="./images/our_team/3.jpg 1x, ./images/our_team/32x.jpg 2x">>
+              srcset="./images/our_team/3.jpg 1x, ./images/our_team/32x.jpg 2x">
             <div class="team-div">
               <h3 class="team-title">Camila Garcia</h3>
               <p class="team-par">Marketing</p>
@@ -286,9 +292,9 @@
             </div>
           </li>
 
-          <li class="index-list">
+          <li class="index-list daniel-wilson">
             <img src="./images/our_team/4.jpg" alt="Daniel Wilson" width="264"
-              srcset="./images/our_team/4.jpg 1x, ./images/our_team/42x.jpg 2x">>
+              srcset="./images/our_team/4.jpg 1x, ./images/our_team/42x.jpg 2x">
             <div class="team-div">
               <h3 class="team-title">Daniel Wilson</h3>
               <p class="team-par">UI Designer</p>

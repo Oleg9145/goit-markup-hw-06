@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .section-photo {
     display: none;
   }
@@ -6,7 +6,10 @@
   .address {
     display: none;
   }
+
   .section-one {
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -24,11 +27,30 @@
         url(../images/Dark-bg2x.jpg);
     }
   }
+
+  .weblogo {
+    justify-content: space-between;
+    margin-right: 0;
+  }
+  .section-h {
+    padding-top: 72px;
+    max-width: 320px;
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+
   /*mobmenu*/
+
   .icon-mob,
   .mobmenu {
     display: contents;
   }
+
   .mobmenu {
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -36,12 +58,12 @@
     background-color: #fff;
     position: fixed;
     top: 0;
-    left: o;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 3;
-    padding: 80px 0 0 40px;
-    width: 428px;
+    padding: 80px 0 40px 40px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,6 +78,7 @@
     gap: 40px;
   }
   .mob-icon {
+    margin: 0;
     display: flex;
     gap: 56px;
     padding-left: 0;
@@ -84,9 +107,10 @@
     letter-spacing: 0.02em;
     text-transform: capitalize;
   }
-
-  .address-mob {
+  .address-m {
     margin-bottom: 48px;
+  }
+  .address-mob {
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -128,12 +152,21 @@
     right: 24px;
     padding: 0;
   }
-
+  .close-mob:is(:hover, :focus) {
+    border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #404bbf;
+  }
+  .modal {
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 100%;
+  }
   .icon-strategy {
     display: none;
   }
   .container {
-    max-width: 428px;
+    max-width: 426px;
   }
   .strategy-ul {
     gap: 72px;
@@ -152,8 +185,6 @@
     text-align: center;
   }
   .index-par {
-    min-width: 396px;
-
     font-size: 16px;
 
     font-weight: 500;
@@ -163,11 +194,15 @@
   /* Ourteam */
   .our-team {
     padding-top: 96px;
+    margin-bottom: 72px;
   }
   .our-team-ul {
     flex-direction: column;
 
     align-items: center;
+  }
+  .index-list .daniel-wilson {
+    margin-bottom: 0;
   }
   .index-list {
     margin-bottom: 72px;
@@ -175,8 +210,7 @@
   }
   .title-two {
     text-align: center;
-    padding-top: 96px;
-    margin-bottom: 72px;
+
     font-size: 36px;
     text-align: center;
     font-weight: 700;
@@ -185,12 +219,10 @@
   }
   /* section-five */
   .section-five {
+    margin-top: 96px;
+    margin-bottom: 96px;
   }
 
-  .customers {
-    margin-top: 96px;
-    margin-bottom: 72px;
-  }
   .company-ul {
     display: flex;
     flex-wrap: wrap;
@@ -199,7 +231,7 @@
   }
 
   .company-li {
-    width: calc((100% - 16px * 2) / 2);
+    width: calc((100% - 16px) / 2);
   }
   /*--Підвал-->*/
   .footer-container {
@@ -213,12 +245,19 @@
     align-items: center;
   }
   .media {
-    margin-top: 72px;
     text-align: center;
+  }
+  .madia-div {
+    margin-top: 72px;
+    margin-bottom: 72px;
   }
   .madia-div,
   .footer-div {
-    margin: 0 auto;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-label {
   }
   .footer-div a {
     display: flex;
@@ -226,20 +265,32 @@
     align-items: center;
   }
   .label-f {
-    margin-top: 72px;
     text-align: center;
   }
   .footer {
     padding-top: 97px;
   }
   .email-form {
-    width: 398px;
     padding: 0 15px 0 15px;
+  }
+}
+@media screen and (max-width: 395px) {
+  /* Зміна шрифту для .tel-mob при ширині екрану 395px або менше */
+  .tel-mob {
+    font-size: 20px;
+  }
+
+  .mob-icon {
+    display: flex;
+    gap: 26px;
+    padding-left: 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
   .section-one {
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -257,9 +308,22 @@
         url(../images/Dark-bgtab2x.jpg);
     }
   }
+  .botton-one {
+    margin-top: 36px;
+  }
   .icon-mob,
   .mobmenu {
     display: none;
+  }
+  .mailto {
+    margin-bottom: 12px;
+  }
+  .color {
+    color: #434455;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
   }
   .address-ul {
     display: block;
@@ -268,7 +332,16 @@
     display: none;
   }
   .container {
-    max-width: 768px;
+    max-width: 766px;
+  }
+  .section-h {
+    width: 496px;
+    color: #fff;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07; /* 107.143% */
+    letter-spacing: 0.02em;
   }
   .strategy-title {
     font-size: 36px;
@@ -288,15 +361,14 @@
     flex-wrap: wrap;
   }
   .strategy {
-    padding: 96px 16px 96px 16px;
+    padding: 96px 0 96px 0;
   }
   .strategy-li {
-    width: calc((100% - 24px * 2) / 2);
+    width: calc((100% - 24px) / 2);
   }
   .index-par {
-    min-width: 356px;
     font-size: 16px;
-
+    max-width: 356px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -306,7 +378,9 @@
     flex-shrink: 0;
     width: fit-content;
   }
-
+  .our-team {
+    padding-top: 96px;
+  }
   .our-team-ul {
     justify-content: center;
     column-gap: 24px;
@@ -322,22 +396,23 @@
   }
   .title-two {
     text-align: center;
-    padding-top: 96px;
-    margin-bottom: 72px;
+    /* padding-top: 96px;
+    margin-bottom: 72px; */
   }
   .customers {
-    margin-top: 96px;
     margin-bottom: 72px;
   }
   .company-ul {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 16px;
+    column-gap: 24px;
     row-gap: 72px;
   }
-
+  .company-a {
+    width: 168px;
+  }
   .company-li {
-    width: calc((100% - 16px * 2) / 3);
+    width: calc((100% - 16px * 2) / 4);
   }
 
   .footer-container {
@@ -348,5 +423,11 @@
   }
   .footer-label {
     margin-top: 72px;
+  }
+  .madia-div {
+    margin: 0;
+  }
+  .footer-container {
+    max-width: 582px;
   }
 }
