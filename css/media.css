@@ -279,6 +279,18 @@
     width: 100%;
     padding: 0 15px 0 15px;
   }
+  /* Portfolio*/
+  .botton-ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .projeckt-ul {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .portfolio-list {
+    width: calc((100% - 48px) / 1);
+  }
 }
 @media screen and (max-width: 395px) {
   /* Зміна шрифту для .tel-mob при ширині екрану 395px або менше */
@@ -438,5 +450,14 @@
   }
   .footer-container {
     max-width: 582px;
+  }
+  .botton-ul {
+    flex-wrap: wrap;
+  }
+  .projeckt-ul {
+    gap: 48px;
+  }
+  .portfolio-list {
+    width: calc((100% - 48px) / 2);
   }
 }
