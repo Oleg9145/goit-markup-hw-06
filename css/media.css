@@ -32,8 +32,10 @@
     justify-content: space-between;
     margin-right: 0;
   }
+  .strategy-title {
+    margin: 0;
+  }
   .section-h {
-    padding-top: 72px;
     max-width: 320px;
     color: #fff;
     text-align: center;
@@ -173,7 +175,7 @@
     flex-wrap: wrap;
   }
   .strategy {
-    padding: 96px 16px 96px 16px;
+    padding: 96px 0px 96px 0px;
   }
   .strategy-title {
     font-size: 36px;
@@ -194,18 +196,16 @@
   /* Ourteam */
   .our-team {
     padding-top: 96px;
-    margin-bottom: 72px;
   }
   .our-team-ul {
     flex-direction: column;
-
+    gap: 72px;
     align-items: center;
   }
   .index-list .daniel-wilson {
     margin-bottom: 0;
   }
   .index-list {
-    margin-bottom: 72px;
     width: 264px;
   }
   .title-two {
@@ -219,8 +219,8 @@
   }
   /* section-five */
   .section-five {
-    margin-top: 96px;
-    margin-bottom: 96px;
+    padding-top: 96px;
+    padding: 96px;
   }
 
   .company-ul {
@@ -257,8 +257,7 @@
     display: flex;
     flex-direction: column;
   }
-  .footer-label {
-  }
+
   .footer-div a {
     display: flex;
     justify-content: center;
@@ -267,10 +266,17 @@
   .label-f {
     text-align: center;
   }
+  .lable-form {
+    width: 100%;
+  }
   .footer {
     padding-top: 97px;
   }
+  .footer-label {
+    width: 100%;
+  }
   .email-form {
+    width: 100%;
     padding: 0 15px 0 15px;
   }
 }
@@ -402,6 +408,9 @@
   .customers {
     margin-bottom: 72px;
   }
+  .customers-container {
+    max-width: 582px;
+  }
   .company-ul {
     display: flex;
     flex-wrap: wrap;
@@ -409,10 +418,10 @@
     row-gap: 72px;
   }
   .company-a {
-    width: 168px;
+    width: 100%;
   }
   .company-li {
-    width: calc((100% - 16px * 2) / 4);
+    width: calc((100% - 24px * 2) / 3);
   }
 
   .footer-container {
