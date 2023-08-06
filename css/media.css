@@ -288,14 +288,28 @@
     flex-direction: column;
     gap: 48px;
   }
+  .projeckt-ul .portfolio-div {
+    column-gap: 0px;
+  }
+  .img img {
+    width: 100%;
+  }
   .portfolio-list {
-    width: calc((100% - 48px) / 1);
+    width: 100%;
+    flex-direction: column;
   }
 }
-@media screen and (max-width: 395px) {
+@media screen and (min-width: 0px) and (max-width: 395px) {
   /* Зміна шрифту для .tel-mob при ширині екрану 395px або менше */
   .tel-mob {
     font-size: 20px;
+  }
+  .company-ul {
+    gap: 12px;
+    flex-direction: column;
+  }
+  .section-five {
+    padding: 20px 0 20px 0;
   }
 
   .mob-icon {
